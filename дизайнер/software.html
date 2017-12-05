@@ -15,12 +15,12 @@
 
  <header class="header">
         <div class="area">
-            <nav class="menu sm-hide">
+            <nav class="menu sm-hide sm-menu">
                 <ul class="menu__list">
-                    <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Портфолио</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                    <li class="menu__item sm-block"><a href="#" class="menu__link">Главная</a></li>
+                    <li class="menu__item sm-block"><a href="#" class="menu__link">Услуги</a></li>
+                    <li class="menu__item sm-block"><a href="#" class="menu__link">Портфолио</a></li>
+                    <li class="menu__item sm-block"><a href="#" class="menu__link">Контакты</a></li>
                 </ul>
             </nav>
 			<div class="burger-btn sm-show hidden">
@@ -151,17 +151,17 @@
                     <div class="h3 content__column-header normal-padding-v">Как заказать разработку?</div>
 
                     <div class="stage">
-                    <span class="name_stage">1</span>
+                    <span class="name_stage"><span class="name_stage-text">1</span></span>
                     <span class="text_stage">Вы отправляете нам заявку на разработку</span>
                     </div>
 
                     <div class="stage">
-                    <span class="name_stage">2</span>
+                    <span class="name_stage"><span class="name_stage-text">2</span></span>
                     <span class="text_stage">После получения заявки, мы перезваниваем вам и назначаем личную встречу</span>
                     </div>
 
                     <div class="stage">
-                    <span class="name_stage">3</span>
+                    <span class="name_stage"><span class="name_stage-text">3</span></span>
                     <span class="text_stage">Обсуждаем будущий проект и приступаем к разработке</span>
                     </div>
                     
@@ -169,10 +169,38 @@
 
                 </article>
                 <article class="content__column col-lg-6 col-md-6 col-sm-12 col-xs-12 small-padding-v sm-h-padding sm-center-text-align">
-                    
-                    <p class="content__column-desc small-padding-v-bottom text-block sm-no-padding">
-					
-					</p>
+                    <form action="" class="contacts-form" method="post">
+                        <div class="contacts__form-text">Как к вам можно обращаться?<span class="required"></span></div>
+                        <input type="text" name="user_name" id="userName" placeholder="Введите свое имя" class="contacts__input">
+                        <div class="contacts__form-text">Выберите желаемую специальность, профессию<span class="required"></span></div>
+                        <select name="spec_select" id="specSelect" class="contacts__select">
+                            <option>Строительство зданий и сооружений</option>
+                            <option>Электромонтер по ремонту и обслуживанию электрооборудования</option>
+                            <option>Мастер общестроительных работ</option>
+                            <option>Мастер столярно-плотничных, паркетных и стекольных работ(ТОП 50)</option>
+                            <option>Слесарь по ремонту строительных машин</option>
+                            <option>Мастер отделочных строительных и декоративных работ(ТОП 50)</option>
+                            <option>Сварщик</option>
+                            <option>Мастер по ремонту и обслуживанию инженерных систем жилищно-коммунального хозяйства(ТОП 50)</option>
+                            <option>Краткосрочное повышение квалификации</option>
+                            <option>Необходима помощь в выборе</option>
+                        </select>
+                        <div class="contacts__form-text">Как с вами можно связаться?<span class="required"></span></div>
+                        <input type="text" name="user_name" id="contacts" placeholder="Телефон, e-mail, ссылка на страницу в социальных сетях" class="contacts__input">
+                        <div class="contacts__form-text">Ваш статус<span class="required"></span></div>
+                        <select name="status_select" id="statusSelect" class="contacts__select">
+                            <option>Поступающий</option>
+                            <option>Родитель(законный представитель) поступающего</option>
+                            <option>Иное лицо</option>
+                        </select>
+                        <div class="contacts__form-text">Даю согласие на обработку в АПОУ УР "Техникум строительных технологий" указанных мной персональных данных<span class="required"></span></div>
+                        <label for="personalInfo" class="contacts__label">
+                            <input type="checkbox" class="contacts__checkbox checkbox" id="personalInfo">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Да</span>
+                        </label>
+                        <input type="button" id="btnSub" class="contacts__submit" value="Отправить" name="submitButton">
+                    </form>
                 </article>
             </div>
         </section>
@@ -188,18 +216,18 @@
 		  <div class="col-xs-12 col-lg-5 col-md-5">
             <p class="text-block">DigitalWolf - Разработчик программных решений. 2017 год.</p>
 			</div>
-			
-			
 			<div class="col-lg-5 col-md-5 col-xs-12">
-			<a href="#" class="footer__link">Политика конфеденциальности</a>
+			    <a href="#" class="footer__link">Политика конфеденциальности</a>
 			</div>
 			
 			<div class="col-lg-1 col-md-1 col-xs-12">
-			<a href="https://vk.com/webdw" class="link_vk"><img src="images/vk2.png" alt="Группа ВКонтакте"></a>
+			    <a href="https://vk.com/webdw" class="link_vk"><img src="images/vk2.png" alt="Группа ВКонтакте"></a>
 			</div>
 			
 			</div>
         </div>
     </footer>
+<script src="jquery-2.2.3.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
