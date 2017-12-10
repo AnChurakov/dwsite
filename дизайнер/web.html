@@ -58,7 +58,7 @@
 
 				
 				</p>
-                <button class="button button--red-in service__button">Обойти конкурентов</button>
+                <button class="button button--red-in service__button selects">Обойти конкурентов</button>
 				</div>
                 <div class="smart-line-wrap center-text-align">
                     <hr class="smart-line smart-line--orange sm-h-padding">
@@ -134,7 +134,7 @@
                 <article class="content__column col-lg-6 col-md-6 col-sm-12 col-xs-12 small-padding-v sm-h-padding sm-center-text-align">
                     <div class="h3 content__column-header normal-padding-v">Корпоративный сайт</div>
                     <p class="content__column-desc small-padding-v-bottom text-block sm-no-padding">
-						Нужен ли нашей компании корпоративный сайт? 
+						Нужен ли вашей компании корпоративный сайт? 
 							Да! И вот почему. 
 							С помощью своего сайта, вы сможете оперативно размещать новости вашей компании, улучшите имидж компании, который обладает существенным весом.
 							Благодаря ему, вас могут найти потенциальные партнеры, сможете увеличить количество клиентов, а также сможете предоставить информацию о новых вакансиях вашей компании.
@@ -164,9 +164,59 @@
 				
             </div>
 		
+		
+		
         </section>
+		
+		   <section class="content__part normal-padding-v small-min-height forms">
+            <div class="area row">
+                <article class="content__column col-lg-6 col-md-6 col-sm-12 col-xs-12 small-padding-v sm-h-padding sm-center-text-align">
+                    <div class="h3 content__column-header normal-padding-v">Как заказать разработку?</div>
+
+                    <div class="stage">
+                    <span class="name_stage"><span class="name_stage-text">1</span></span>
+                    <span class="text_stage">Вы отправляете нам заявку на разработку</span>
+                    </div>
+
+                    <div class="stage">
+                    <span class="name_stage"><span class="name_stage-text">2</span></span>
+                    <span class="text_stage">После получения заявки, мы перезваниваем вам и назначаем личную встречу</span>
+                    </div>
+
+                    <div class="stage">
+                    <span class="name_stage"><span class="name_stage-text">3</span></span>
+                    <span class="text_stage">Обсуждаем будущий проект и приступаем к разработке</span>
+                    </div>
+                    
+
+
+                </article>
+                <article class="content__column col-lg-6 col-md-6 col-sm-12 col-xs-12 small-padding-v sm-h-padding sm-center-text-align">
+                    <form action="" class="contacts-form" method="post">
+                        <div class="contacts__form-text">Как к вам можно обращаться?<span class="required"></span></div>
+                        <input type="text" name="user_name" id="userName" placeholder="Введите свое ФИО" class="contacts__input">
+                        <div class="contacts__form-text">Выберите услугу<span class="required"></span></div>
+                        <select name="spec_select" id="specSelect" class="contacts__select">
+                            <option>Разработка приложения</option>
+                            <option>Разработка веб-сайта</option>
+                        </select>
+                        <div class="contacts__form-text">Как с вами можно связаться?<span class="required"></span></div>
+                        <input type="text" name="user_name" id="contacts" placeholder="Телефон, e-mail" class="contacts__input">
+                        <div class="contacts__form-text">Даю согласие на обработку указанных мной персональных данных<span class="required"></span></div>
+                        <label for="personalInfo" class="contacts__label">
+                            <input type="checkbox" class="contacts__checkbox checkbox" id="personalInfo">
+                            <span class="checkbox-custom"></span>
+                            <span class="label">Да</span>
+                        </label>
+                        <input type="button" id="btnSub" class="button button--blue-in" value="Отправить" name="submitButton">
+                    </form>
+                </article>
+            </div>
+        </section>
+		
         <!--<section class="content__part small-min-height">
             <div class="area">
+			
             </div>
         </section>-->
     </main>
